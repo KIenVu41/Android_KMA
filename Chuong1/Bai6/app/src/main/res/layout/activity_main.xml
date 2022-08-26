@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+   <Button
+       android:id="@+id/btnSms"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="10dp"
+       android:text="Read SMS" />
+
+    <Button
+        android:id="@+id/btnContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Read Contacts" />
+
+    <ListView
+        android:id="@+id/contact_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+    </ListView>
+
+    <ListView
+        android:id="@+id/message_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+    </ListView>
+
+</LinearLayout>
